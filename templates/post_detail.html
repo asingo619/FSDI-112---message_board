@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Message # {{ post.id}}{% endblock title %}
+
+{% block content %}
+    <h1>Message #{{ post.id }}</h1>
+    <p>{{ post.text }}</p>
+    <br/>
+    CLick<a href="{% url 'home' %}">Here</a> to go to the homepage.
+{% endblock content %}
